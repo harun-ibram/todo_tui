@@ -6,6 +6,7 @@ run: build
 
 build: main.o list.o
 	$(CC) $(CFLAGS) $^ -o todo
+	rm main.o list.o
 
 main.o: main.c
 

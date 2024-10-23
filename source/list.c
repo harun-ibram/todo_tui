@@ -132,12 +132,11 @@ int menu(List_p *list) {
 void userAddTask(List_p *list) {
     system("clear");
     printf("Please enter the name of the task (max. 48 characters): ");
+    fflush(stdin);
     char *buf = malloc(MAX_STR_LEN);
     scanf("%s", buf);
-    printf("%s", buf);
     addTask(list, buf, 0);
     free(buf);
-    return;
 }
 
 void userFinishTask(List_p *list) {

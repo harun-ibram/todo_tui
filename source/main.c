@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include "List.h"
 #define MAX_STR_LEN 48
-
+#define clear() printf("\033[H\033[j")
 
 int main() {
     List_p main_list = NULL;
-    int choice= menu(&main_list);
+    int choice = menu(&main_list);
     while (choice != 4) {
         switch(choice) {
             case 1:
@@ -21,7 +21,7 @@ int main() {
         }
         choice = menu(&main_list);
     }
-    system("clear");
+    clear();
     printList(main_list);
     printListToFile(main_list);
     freeList(&main_list);

@@ -3,8 +3,9 @@
 #include <string.h>
 #ifndef LIST_H
 #define LIST_H
+
 #define MAX_STR_LEN 48
-#define LIST_FILE "newlist"
+#define LIST_FILE "newlist.txt"
 
 typedef struct node {
     char *task;
