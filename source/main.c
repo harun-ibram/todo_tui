@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "List.h"
+#include "list.h"
 #define MAX_STR_LEN 48
-#define clear() printf("\033[H\033[j")
+#define clear() printf("\033[H\033[J")
 
 int main() {
     List_p main_list = NULL;
