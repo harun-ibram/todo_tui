@@ -12,6 +12,7 @@ You have 4 possible actions:
 2. Mark a task as done
 3. Delete a task
 4. Quit the app
+
 Quitting the app will write the list to 'newlist.txt' and print it again on the screen.
 
 ### This currently works on Linux machines only.
